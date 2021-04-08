@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "seradiazpin",
+      "public": "dist/seradiazpin",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

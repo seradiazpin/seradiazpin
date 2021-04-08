@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm">
+      <h3>Lenguages</h3>
+      <div class="row">
+        <app-skill *ngFor="let item of languages" [skill] ="item" class="col-sm-3"></app-skill>
+      </div>
+      <p *ngFor="let item of languages">{{item|json}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <h3>Front End</h3>
+      <div class="row">
+        <app-skill *ngFor="let item of frontEnd" [skill] ="item" class="col-sm-3"></app-skill>
+      </div>
+      <p *ngFor="let item of frontEnd">{{item|json}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <h3>Back End</h3>
+      <div class="row">
+        <app-skill *ngFor="let item of backEnd" [skill] ="item" class="col-sm-3"></app-skill>
+      </div>
+      <p *ngFor="let item of backEnd">{{item|json}}
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <h3>Cloud</h3>
+      <div class="row">
+        <app-skill *ngFor="let item of cloud" [skill] ="item" class="col-sm-3"></app-skill>
+      </div>
+      <p *ngFor="let item of cloud">{{item|json}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <h3>AI</h3>
+      <div class="row">
+        <app-skill *ngFor="let item of AI" [skill] ="item" class="col-sm-3"></app-skill>
+      </div>
+      <p *ngFor="let item of AI">{{item|json}}</p>
+    </div>
+  </div>
+</div>

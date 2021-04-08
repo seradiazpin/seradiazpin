@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "myportfolio-22b6b": {
+      "hosting": {
+        "seradiazpin": [
+          "myportfolio-22b6b"
+        ]
+      }
+    }
+  }
+}

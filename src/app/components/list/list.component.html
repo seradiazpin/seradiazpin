@@ -1,0 +1,24 @@
+<h2 class="pb-3 pt-2 ">{{title}}</h2>
+<div class="row" style="padding-left: 12px;">
+    
+    <div class="col-md-3" *ngFor="let item of items">
+        <div class="well well-sm">
+            <div class="row border">
+                <div class="col-xs-3 col-md-3 text-center  align-self-center" *ngIf="item.logo">
+                    <img [src]="item.logo" width="70%" alt="logo"
+                            class="img-fluid" />
+                </div>
+                <div class="col-xs-9 col-md-9 section-box">
+                    <h5>
+                        {{item.name}}
+                    </h5>
+                    <p>
+                        {{item?.description}} <a *ngIf="item.link" [href]="item.link">link</a></p>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+
+</div>
