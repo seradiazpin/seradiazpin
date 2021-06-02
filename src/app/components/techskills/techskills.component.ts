@@ -2,6 +2,7 @@ import { Skill } from './../../interfaces/skill';
 import { PortfolioService } from './../../services/portfolio.service';
 import { Component, OnInit } from '@angular/core';
 import _ from 'lodash'
+
 @Component({
   selector: 'app-techskills',
   templateUrl: './techskills.component.html',
@@ -13,6 +14,7 @@ export class TechskillsComponent implements OnInit {
   backEnd:  Array<Skill>;
   cloud:  Array<Skill>;
   AI:Array<Skill>;
+  form = {}
   constructor(private portfolioService:PortfolioService) { }
   getSkills(){
     this.portfolioService.getSkills().subscribe((skills)=>{
@@ -27,5 +29,8 @@ export class TechskillsComponent implements OnInit {
   ngOnInit() {
     this.getSkills();
   }
+  onSubmit() {
 
+    this.portfolioService.storeSkill(this.form);
+  }
 }

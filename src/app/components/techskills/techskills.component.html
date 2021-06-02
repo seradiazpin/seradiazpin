@@ -5,16 +5,45 @@
       <div class="row">
         <app-skill *ngFor="let item of languages" [skill] ="item" class="col-sm-3"></app-skill>
       </div>
-      <p *ngFor="let item of languages">{{item|json}}</p>
     </div>
   </div>
+
+
+<!--   <input type="text" class="form-control" id="name" required
+      [(ngModel)]="form.name" placeholder="name"
+      class="input-field col s12"
+    />
+    <input type="text" class="form-control" id="name" required
+      [(ngModel)]="form.description" placeholder="description"
+      class="input-field col s12"
+    />
+    <input type="text" class="form-control" id="name" required
+      [(ngModel)]="form.icon" placeholder="icon"
+      class="input-field col s12"
+    />
+    <input type="text" class="form-control" id="name" required
+      [(ngModel)]="form.tag" placeholder="tag"
+      class="input-field col s12"
+    />
+    <input type="text" class="form-control" id="name" required
+      [(ngModel)]="form.time" placeholder="time"
+      class="input-field col s12"
+    />
+    <input type="number" class="form-control" id="name" required
+      [(ngModel)]="form.id" placeholder="id"
+      class="input-field col s12"
+    />
+    <button (click)="onSubmit()">
+      Submit
+    </button>
+
+--> 
   <div class="row">
     <div class="col-sm">
       <h3>Front End</h3>
       <div class="row">
         <app-skill *ngFor="let item of frontEnd" [skill] ="item" class="col-sm-3"></app-skill>
       </div>
-      <p *ngFor="let item of frontEnd">{{item|json}}</p>
     </div>
   </div>
   <div class="row">
@@ -23,8 +52,7 @@
       <div class="row">
         <app-skill *ngFor="let item of backEnd" [skill] ="item" class="col-sm-3"></app-skill>
       </div>
-      <p *ngFor="let item of backEnd">{{item|json}}
-      </p>
+
     </div>
   </div>
   <div class="row">
@@ -33,7 +61,6 @@
       <div class="row">
         <app-skill *ngFor="let item of cloud" [skill] ="item" class="col-sm-3"></app-skill>
       </div>
-      <p *ngFor="let item of cloud">{{item|json}}</p>
     </div>
   </div>
   <div class="row">
@@ -42,7 +69,6 @@
       <div class="row">
         <app-skill *ngFor="let item of AI" [skill] ="item" class="col-sm-3"></app-skill>
       </div>
-      <p *ngFor="let item of AI">{{item|json}}</p>
     </div>
   </div>
 </div>

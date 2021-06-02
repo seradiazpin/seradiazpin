@@ -15,7 +15,7 @@
             <div class="card-body">
               <p class="card-text">{{item?.description}}</p>
               <span *ngFor="let tech of item?.tecnologies" class="badge bg-secondary">{{tech}} </span>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Last update {{item?.date}}</small></p>
               <a [href]="item?.github" target="_blank" class="btn btn-primary">Github</a>
               <a *ngIf="item?.link" [href]="item?.link" target="_blank" class="btn btn-primary">Site</a>
             </div>

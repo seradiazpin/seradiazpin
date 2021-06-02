@@ -20,6 +20,12 @@ export class PortfolioService {
     return this.firestore.collection('Skills').valueChanges() as Observable<Array<Skill>>
   }
 
+  storeSkill(skill){
+    return this.firestore.collection('Skills').add(skill).then(res =>{
+      console.log(res);
+    })
+  }
+
   getProjects():Observable<Array<Project>>{
     return this.firestore.collection('Projects').valueChanges() as Observable<Array<Project>>
   }

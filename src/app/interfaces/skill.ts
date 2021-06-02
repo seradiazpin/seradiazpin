@@ -3,5 +3,6 @@ export interface Skill{
     tag:string,
     name:string,
     icon:string,
-    time:string
+    time:string,
+    description:string
 }
