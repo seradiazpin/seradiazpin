@@ -9,7 +9,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  private about$: Observable<Array<About>>;
+  about$: Observable<Array<About>>;
   constructor(private portfolioService: PortfolioService) {
   }
   getAbout(lan: number) {
