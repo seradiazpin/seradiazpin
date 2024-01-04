@@ -5,5 +5,7 @@ export interface Experience{
     endDate:string,
     description:string,
     placeLink:string,
-    time:string
+    time:string,
+    details:any
+    title:string
 }

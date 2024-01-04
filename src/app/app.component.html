@@ -1,22 +1,55 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="wrapper">
-  <!-- Sidebar -->
-  <app-sidebar [visible]= sidebar ></app-sidebar>
-  <!-- Page Content -->
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+<div class="background-gradient padding-content">
+  
+  <div class="page-wrapper" #page>
+    <!-- ================= HEADER ================= -->
+    <app-nav-panel [selected]="selected"></app-nav-panel>
+    <!-- =============== HEADER END =============== -->
 
-            <button type="button" id="sidebarCollapse" class="btn btn-secondary" (click)="click()">
-                <i class="fas fa-align-left"></i>
-                <span><i class="bi bi-list"></i></span>
-            </button>
+    <!-- ================== HOME ================== -->
+    <app-homepage #home ></app-homepage>
+    <!-- ================= HOME END ================= -->
 
+    <!-- ================== SERVICES ================== -->
+    <app-information #information ></app-information>
+    <!-- ================ SERVICES END ================ -->
+
+
+    <!-- ==================== BLOG ==================== -->
+    <app-certifications #certifications></app-certifications>
+    <!-- ================== BLOG END ================== -->
+
+    <!-- ================== SKILLS ================== -->
+    <app-skills #skills></app-skills>
+    <!-- =============== SKILLS END =============== -->
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="contact" class="section">
+        <h2 class="title">CONTACT</h2>
+        <div class="section-des">
+            Lorem ipsum dolor sit amet consectetu adipiscing elit viverra tristique placerat.
         </div>
-    </nav>
-    <router-outlet></router-outlet>
-  </div>
+        <div class="content-670">
+            <p>
+                Dolor sit amet, consectetur adipiscing elit. Viverra tristique placerat in massa consectetur quisque. Nunc ac fames lectus in libero aliquet lorem ipsum dolor sit amet enim est urus tincidunt magna ut turpis eu, eu enim. Nisl porttitor elit risus velit urna morbi mauris.
+            </p>
+        </div>
 
-</div>   
 
+        <div class="content-670">
+            <div class="contact-form">
+                <p>
+                    <input id="subject" type="text" name="your-subject" [(ngModel)]="subject" placeholder="SUBJECT">
+                </p>
+                <p>
+                    <textarea id="message" name="your-message" [(ngModel)]="message" placeholder="MESSAGE"></textarea>
+                </p>
+                <p class="contact-submit-holder">
+                    <input (click)="toMail()" type="submit" value="SEND">
+                </p>                                
+            </div> 
+        </div>
 
+    </section>
+    <!-- ================== ABOUT END ================== -->
+</div>
+</div>

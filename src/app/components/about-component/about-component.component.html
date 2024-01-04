@@ -1,0 +1,37 @@
+<section class="container-flex ">
+  <div class=" row" *ngFor="let about of about$ | async">
+    <div class="row background-gradient">
+      <div class="col">
+        <h3 id="scrollspyHeading1">Sobre Mi</h3>
+        <p>{{about?.resume}}</p>
+        <app-list-component [title]="'Contacto'" [items]="about?.contact! "></app-list-component>
+      </div>
+      <div class="col">
+        <img src="https://placehold.co/600x400"
+          class="card-img-top img-cover ratio ratio-1x1 rounded-circle overflow-hidden" alt="...">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        <app-timeline-component [title]="'Educacion'" [events]="about?.degrees!"></app-timeline-component>
+        <app-list-component [title]="'Certificados'" [items]="about?.certificates!"></app-list-component>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <app-timeline-component [title]="'Experiencia'" [events]="about?.experience!"></app-timeline-component>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <app-list-component [title]="'Idiomas'" [items]="about?.languages!"></app-list-component>
+        </div>
+      </div>
+      <div class="row pb-5">
+        <div class="col-sm">
+          <app-list-component [title]="'Hobies'" [items]="about?.hobies!"></app-list-component>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

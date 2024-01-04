@@ -1,0 +1,29 @@
+<section id="blog" class="section">
+    <h2 class="title">EDUCATION</h2>
+    <div class="section-des">
+        Estudios profecionales y certificados conceguidos.
+    </div>
+
+    <ul class="home-blog-list">                        
+        <li *ngFor="let education of data">
+            <a style="" href="{{education.link}}">{{education.title.es}} <br></a>
+            <div class="blog-list-info">
+                <div class="date">{{education.begin}} - {{education.end}}</div>
+                <div class="category">{{education.degree | uppercase}}</div>
+                <div class="category" style="text-align: justify; width: auto;">{{education.institution | uppercase}}</div>
+            </div>
+        </li>                                         
+    </ul>
+    <h2 class="title" style="padding-top: 50px;">CERTIFICATES</h2>
+    <ul class="home-blog-list">                        
+        <li *ngFor="let certificate of dataCertification">
+            <a href="{{certificate.link}}">{{certificate.title.es}}</a>
+            <div class="blog-list-info">
+                <div class="date">{{certificate.begin}}</div>
+                <div class="category">{{certificate.degree | uppercase}}</div>
+                <div class="category">{{certificate.institution | uppercase}}</div>
+            </div>
+        </li>                                         
+    </ul>
+
+</section>

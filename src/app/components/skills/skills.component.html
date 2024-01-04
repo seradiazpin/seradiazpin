@@ -1,0 +1,40 @@
+<section id="skills" class="section section-active">
+    <h2 class="title">Experiencia</h2>
+    <div class="section-des">
+        Lorem ipsum dolor sit amet consectetu adipiscing elit viverra tristique placerat
+    </div>
+    <p class="content-670">
+        Viverra tristique placerat in sat massa consectetur quisque. Nunc aces fames lectus in libero aliquet ertare feraso est lorem nunc dolor sit amet settera aces volutpat in voltare lupar est phasellus. Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu.
+    </p>
+
+    <ul class="skills-history block-right">
+        <li *ngFor="let work of data">
+            <span class="date">{{work.endDate}}</span>
+           
+            <p>
+                <strong style="font-size: larger;">{{work.name}}</strong> - <small>{{work.title}}</small>
+                <br>
+                {{work.description}}
+                <br>
+                <span *ngFor="let item of work.details">
+                    
+                    <strong>{{item.startDate}}- {{item.endDate}}</strong> {{item.description}}
+                    <br>
+                </span>
+            </p>
+        </li>
+    </ul>
+    <br>
+    <h2 class="title">SKILLS</h2>
+    <div class="section-des">
+        Lorem ipsum dolor sit amet consectetu adipiscing elit viverra tristique placerat
+    </div>
+    <ul class="skills-progress">
+        <li *ngFor="let skill of dataSkills">
+            <div class="card text-center" style="max-width: 18rem; width: 100%;">
+                <i [class]="skill?.icon + ' col-sm-3 p-1'" class="card-img-top" style="font-size: 5em; " ></i>
+                <div class="card-header">{{skill.name}}</div>
+              </div>
+        </li>
+    </ul>
+</section>

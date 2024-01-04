@@ -2,10 +2,13 @@
   "targets": {
     "myportfolio-22b6b": {
       "hosting": {
-        "seradiazpin": [
+        "portfolio-update": [
           "myportfolio-22b6b"
         ]
       }
     }
+  },
+  "projects": {
+    "default": "myportfolio-22b6b"
   }
 }

@@ -1,0 +1,24 @@
+<h2 class="pb-3 pt-2 ">{{title}}</h2>
+<div class="row" style="padding-left: 12px;">
+    
+    <div class="pill-group"  *ngFor="let item of items">
+        <div class="well well-sm">
+            <div class="row border">
+                <div class="col-xs-3 col-md-3 text-center  align-self-center" *ngIf="item.logo">
+
+                    <a
+                    class="pill"
+                    [href]="item.link"
+                    target="_blank"
+                    rel="noopener">
+                    <span>{{ item.name }}</span>
+                    <img [src]="item.logo" width="70%" alt="logo"
+                    class="img-fluid" />
+                </a>
+                    
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    
+</div>

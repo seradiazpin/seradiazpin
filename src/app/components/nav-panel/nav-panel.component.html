@@ -1,0 +1,31 @@
+<div id="nav-btn" class="nav-btn">
+    <span class="nav-btn-cover">
+        <span class="menu-line"></span>                   
+    </span>
+</div>
+<div class="s-nav">
+    <div class="nav-count">
+        <div class="current-num">
+            <span style="opacity: 1; left: 0px;">01</span>
+        </div>
+        <div class="pagination-sep">/</div>
+        <div class="total-pages-num">05</div>
+    </div>                                                            
+    <div class="nav-container">
+        <a class="site-title slow-scroll" href="#home">Sergio Alejandro Diaz Pinilla</a>
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li class="" [ngClass]="{'current': selected == 1}"><a href="#home" (click)="setSectionSelected(1)"  >Home</a></li>
+                <li class="" [ngClass]="{'current': selected == 2}"><a href="#services" (click)="setSectionSelected(2)">About</a></li>
+                <li class="" [ngClass]="{'current': selected == 3}"><a href="#blog" (click)="setSectionSelected(3)">Education</a></li>
+                <li class="" [ngClass]="{'current': selected == 4}"><a href="#skills" (click)="setSectionSelected(4)">Experience</a></li>
+                <li class="" [ngClass]="{'current': selected == 5}"><a href="#contact" (click)="setSectionSelected(5)">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <ul class="nav-soc">
+        <li><a href="#">TW.</a></li>
+        <li><a href="#">IN.</a></li>
+        <li><a href="#">FB.</a></li>
+    </ul>
+</div>

@@ -1,0 +1,132 @@
+/* ===================================
+    4. Service Section CSS
+====================================== */
+
+.section-des {
+    max-width: 440px;
+    font-size: 22px;
+    line-height: 1.65;
+}
+
+.serv-link-cover {
+    background-color: #f44647;
+    display: flex;
+    align-items: center;
+    padding: 50px 70px;
+    margin-top: 45px;
+}
+
+.serv-link-cover li + li {
+    margin-left: 100px;
+}
+
+.serv-link-cover a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.serv-link-cover a:before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    transition: .35s ease-out;
+    background-color: #fff;
+}
+
+.serv-link-cover a:hover:before {
+    width: 0;
+}
+
+.serv-block-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.serv-block-wrap > div:nth-last-of-type(-n+2) {
+    margin-bottom: 0;
+}
+
+.serv-block-wrap .serv-block-item {
+    width: calc(50% - 65px);
+    margin-bottom: 80px;
+}
+
+.serv-block-wrap .serv-block-item:hover h4 {
+    transform: translateX(-10px);
+}
+
+.serv-block-wrap .serv-block-item h4 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.27em;
+    margin-top: 30px;
+    transition: .35s ease-out;
+}
+
+.serv-block-wrap .serv-block-item p {
+    margin-top: 23px;
+    max-width: 250px;
+    margin-bottom: 0;
+}
+
+/* ===================================
+    5. About Section CSS
+====================================== */
+
+.about-img {
+    max-width: 100%;
+    display: block;
+}
+
+.about-info {
+    background-color: #f44647;
+    color: #fff;
+    width: 330px;
+    padding: 50px 30px 50px 70px;
+    float: right;
+    margin: 0 0 40px 65px;
+}
+
+.about-info li + li {
+    margin-top: 44px;
+}
+
+.about-info h6 {
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.about-info a {
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.about-info a:hover {
+    padding-left: 8px;
+}
+
+.about-text {
+    padding-top: 53px;
+}
+
+.about-text p {
+    max-width: 670px;
+}
+
+.signature {
+    margin-top: 10px;
+}
+
