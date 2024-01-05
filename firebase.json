@@ -1,8 +1,8 @@
 {
   "hosting": [
     {
-      "target": "seradiazpin",
-      "public": "dist/seradiazpin",
+      "target": "portfolio-update",
+      "public": "dist/portfolio-update/browser",
       "ignore": [
         "firebase.json",
         "**/.*",
